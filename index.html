@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article preview component</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="images/drawers.jpg" class="card-img" alt="..." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article preview component</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/drawers.jpg" class="card-img" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">
+            Shift the overall look and feel by adding these wonderful touches
+            to furniture in your home
+          </h5>
+          <p class="card-text">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips to
+            help you make any room feel complete.
+          </p>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">
-              Shift the overall look and feel by adding these wonderful touches
-              to furniture in your home
-            </h5>
-            <p class="card-text">
-              Ever been in a room and felt like something was missing? Perhaps
-              it felt slightly bare and uninviting. I’ve got some simple tips to
-              help you make any room feel complete.
-            </p>
-          </div>
-          <div class="info-and-contact card-text">
-            <div class="photo-and-name">
-              <img
-                src="images/avatar-michelle.jpg"
-                alt="Michelle Appleton"
-                class="profile-pic"
-              />
-              <div class="h-p">
-                <h5 class="michelle-name">Michelle Appleton</h5>
-                <p class="publish-date">28 Jun 2020</p>
-              </div>
-            </div>
-            <div class="share-icon-container">
-              <i class="fas fa-share"></i>
+        <div class="info-and-contact card-text">
+          <div class="photo-and-name">
+            <img src="images/avatar-michelle.jpg" alt="Michelle Appleton" class="profile-pic" />
+            <div class="h-p">
+              <h5 class="michelle-name">Michelle Appleton</h5>
+              <p class="publish-date">28 Jun 2020</p>
             </div>
           </div>
-        </div>
-
-        <div class="hiden-links">
-          <span class="share">SHARE</span
-          ><i class="fab fa-facebook-square share-icons"></i
-          ><i class="fab fa-twitter share-icons"></i
-          ><i class="fab fa-pinterest share-icons"></i>
-          <div class="share-icon-container-hide">
-            <i class="fas fa-share share-icons"></i>
+          <div class="share-icon-container">
+            <i class="fas fa-share"></i>
           </div>
         </div>
       </div>
+
+      <div class="hiden-links">
+        <span class="share">SHARE</span>
+        <div class="fb-share-button" data-href="https://github.com/southamericanbear" data-layout="button"
+          data-size="large"><a target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.github.com/southamericanbear%2F&amp;src=sdkpreparse">
+            <i class="fab fa-facebook-square share-icons"></i>
+          </a></div><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank"
+          data-url="https://github.com/southamericanbear" data-show-count="false"><i
+            class="fab fa-twitter share-icons"></i></a><a href="https://www.pinterest.com/pin/create/button/"
+          target="_blank"><i class="fab fa-pinterest share-icons"></i>
+        </a>
+        <div class="share-icon-container-hide">
+          <i class="fas fa-share share-icons"></i>
+        </div>
+      </div>
     </div>
-    <script src="app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/fa5117c01c.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0"
+    nonce="UN0CJtL8"></script>
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/fa5117c01c.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
