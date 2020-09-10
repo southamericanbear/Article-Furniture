@@ -1,0 +1,218 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 350px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.col-md-8 {
+  position: relative;
+}
+.card-body {
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+}
+.card-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-title {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.card-text {
+  padding-bottom: 10px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: hsl(217, 19%, 35%);
+  line-height: 20px;
+}
+p {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.74rem;
+}
+
+.info-and-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+.photo-and-name {
+  display: flex;
+}
+.h-p {
+  margin-left: 15px;
+  line-height: 2px;
+}
+.michelle-name {
+  font-size: 0.78rem;
+}
+.share-icon-container {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: relative;
+}
+.publish-date {
+  margin-bottom: 0px;
+}
+.fa-share {
+  color: hsl(217, 19%, 35%);
+  font-size: 1rem;
+  align-self: center;
+  padding-left: 10px;
+  z-index: 4;
+}
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+/* hiden bar stuff */
+
+.share {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 0.73rem;
+}
+.share-icon-container-hide {
+  background-color: hsl(212, 23%, 69%);
+  margin-bottom: 0;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.share-icons {
+  color: hsl(210, 46%, 95%);
+  font-size: 1rem;
+}
+.fa-facebook-square,
+.fa-twiter,
+.fa-pinterest {
+  font-size: 1.2rem;
+}
+
+.hiden-links {
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  width: -webkit-fill-available;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  top: 450px;
+  transition: opacity 0.25s ease-out, background 0.25s ease-out;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+.hideit {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .card {
+    max-width: 800px;
+    width: 780px;
+    height: 280px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 180px;
+  }
+
+  .card-img {
+    height: 280px;
+    width: 285px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card-body {
+    margin-left: 20px;
+  }
+  .photo-and-name {
+    margin-left: 20px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 0px;
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+
+  .hiden-links {
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px; */
+    /* width: -webkit-fill-available; */
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    position: absolute;
+    left: 582px;
+    bottom: inherit;
+    right: -60px;
+    z-index: 2;
+    top: 160px;
+    transition: opacity 0.25s ease-out, background 0.25s ease-out;
+    opacity: 0;
+    max-width: 300px;
+  }
+
+  .hiden-links::after {
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: -15px;
+    left: 45%;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+  .hideit,
+  .share-icon-container-hide {
+    display: none;
+  }
+}
